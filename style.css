@@ -20,3 +20,78 @@ body {
 .info span {
   color: #e95400;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "bitter", "sans-serif";
+}
+.first-h1 {
+  margin: 20px 0;
+}
+h3 {
+  margin-top: 16px;
+}
+.first-para,
+p {
+  margin: 20px 0;
+}
+.first-para {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+.block-quote {
+  padding-left: 16px;
+  margin-left: 16px;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 16px;
+  font-size: 14px;
+  border-left: 2px solid #e95400;
+}
+.block-quote cite {
+  display: block;
+  margin-left: 16px;
+  font-weight: 600;
+}
+footer {
+  background-color: purple;
+}
+footer ul {
+  padding: 16px;
+  text-align: center;
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* hero section */
+
+.hero {
+  background-color: #863ae8;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-heading,
+.hero-p,
+hr {
+  color: #fff;
+  text-align: center;
+  width: 75%;
+  max-width: 900px;
+}
