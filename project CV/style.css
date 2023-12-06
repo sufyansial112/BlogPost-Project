@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  height: 90vh;
+  background-color: #f08e80;
+  color: #fff;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 12px;
+}
+.header p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #f08e80;
+  transition: all;
+}
+.nav-btn:hover {
+  background-color: #eac4bf;
+  border: 1px solid #f08e80;
+}
+
+.hero-content {
+  padding: 0 15%;
+}
+.heading-primary {
+  color: #fff;
+  font-size: 60px;
+}
+.skills-section {
+  display: flex;
+  padding: 0 15%;
+}
+
+.skills-section h1 {
+  width: 50%;
+}
+.skills-section p {
+  width: 50%;
+  padding-right: 20%;
+  font-size: 18px;
+}
+.skilled-section {
+  display: grid;
+  grid-template-columns: 36% 64%;
+  padding: 0 15%;
+}
+.skills-div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  justify-content: start;
+}
+.skills-div ul {
+  list-style: none;
+}
+.skills-div ul li {
+  margin-top: 10px;
+}
+
+/* blog section */
+.blog {
+  padding: 32px 0;
+}
+.blog-content {
+  display: grid;
+  padding: 0 15%;
+  grid-template-columns: 40% 60%;
+}
+.footer {
+  background-color: black;
+}
+.footer-content img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1.5rem;
+}
+.footer-content p {
+  color: #fff;
+  margin-left: 1.5rem;
+}
+.footer-content {
+  text-align: center;
+  padding: 16px;
+}
