@@ -11,7 +11,122 @@ h1 {
   color: rgb(83, 49, 156);
 }
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   max-width: 900px;
   width: 100%;
+  position: relative;
+  border-radius: 12px;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  color: rgb(200, 175, 255);
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.tabs p {
+  padding: 16px;
+  font-weight: bold;
+}
+.tabs p:hover {
+  color: rgb(83, 49, 156);
+  cursor: pointer;
+}
+.tabs p.active {
+  color: rgb(83, 49, 156);
+  position: relative;
+}
+.line {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(231, 231, 231);
+  position: absolute;
+  top: 80px;
+}
+.tabs .active::before {
+  content: "";
+  width: 200%;
+  height: 3px;
+  background-color: rgb(83, 49, 156);
+  position: absolute;
+  left: -50%;
+  top: 65px;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+/* toggle bar */
+
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+.toggle-wrapper img {
+  width: 40px;
+  height: 40px;
+  margin: 0 2px;
+}
+.toggle {
+  display: flex;
+  background-color: rgb(83, 49, 156);
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+  height: 32px;
+  padding: 4px 6px 4px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.toggle span:first-of-type {
+  color: #fff;
+}
+.toggle span:last-of-type {
+  color: rgb(83, 49, 156);
+  background-color: #fff;
+  padding: 2px 12px;
+  border-radius: 20px;
+  width: 30%;
+  align-items: center;
+  text-align: center;
+}
+
+/* sessions container */
+
+.sessions {
+  background-color: rgb(250, 247, 255);
+  width: 50%;
+  text-align: center;
+  padding: 32px;
+  border-radius: 20px;
+  margin: 32px 0;
+  text-transform: uppercase;
+
+  font-weight: bold;
+}
+
+.sessions p:first-of-type {
+  margin: 0;
+  color: rgb(83, 49, 156);
+}
+
+.sessions p:last-of-type {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-size: 62px;
+  color: rgb(83, 49, 156);
+}
+.description {
+  padding: 0 32px;
+  line-height: 32pxpx;
+  margin: 16px 0 32px 0;
 }
