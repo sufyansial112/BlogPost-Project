@@ -127,6 +127,110 @@ h1 {
 }
 .description {
   padding: 0 32px;
-  line-height: 32pxpx;
+  line-height: 36px;
+  font-size: 18px;
   margin: 16px 0 32px 0;
+}
+
+/* scroll effect */
+
+.scroller {
+  width: 80%;
+  margin: 32px 0 16px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-bar {
+  width: 100%;
+  background-color: rgb(250, 247, 255);
+  height: 12px;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.scroll {
+  width: 31%;
+  background-color: rgb(83, 49, 156);
+  height: 12px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.point {
+  height: 24px;
+  width: 24px;
+  background-color: rgb(44, 44, 44);
+  position: absolute;
+  left: 200px;
+  border-radius: 50%;
+  top: -6px;
+  border: 2px solid white;
+  transition: 0.5s transform ease;
+}
+.point:hover {
+  transform: scale(1.2);
+}
+.scroll-progress {
+  width: 80%;
+}
+.scroll-progress ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.scroll-progress ul li {
+  font-weight: 600;
+  color: rgb(44, 44, 44);
+}
+
+/* card design */
+.card-wrapper {
+  display: flex;
+
+  padding: 0 16px;
+}
+.card {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgb(250, 247, 255);
+  text-align: center;
+  padding: 16px 32px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  color: rgb(83, 49, 156);
+  font-weight: bold;
+}
+.card hr {
+  width: 40%;
+  border: 1px solid white;
+}
+.card:first-of-type {
+  margin-right: 32px;
+}
+.button {
+  background-color: rgb(83, 49, 156);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  transition: 0.5s transform ease-in;
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.price {
+  font-size: 42px;
+  margin: 0;
+}
+.card p {
+  margin: 12px;
 }
