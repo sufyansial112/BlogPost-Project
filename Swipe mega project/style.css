@@ -32,13 +32,18 @@
   --primary-accent: #0a2540;
 
   /* section */
+
+  .section-container {
+    width: 100%;
+    max-width: 1140px;
+  }
 }
 
 body {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  background-color: var(--purple-1);
+  background-color: var(--bg-white);
   padding: var(--marg--med) 0 0 0;
   display: flex;
   flex-direction: column;
@@ -108,6 +113,7 @@ p {
   line-height: 26px;
   font-family: var(--heading-font);
   font-weight: 500;
+  color: var(--text-grey);
 }
 .subtitle {
   color: var(--purple-1);
@@ -149,6 +155,9 @@ p {
   font-weight: bold;
   transition: all 0.2s ease;
 }
+.hero-section .button-div-hero .secondary-button-img {
+  color: var(--purple-2);
+}
 .secondary-button:hover {
   opacity: 0.5;
   cursor: pointer;
@@ -176,6 +185,7 @@ navbar {
   max-width: 1140px;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--text-grey);
 }
 
 .nav-list {
@@ -197,7 +207,11 @@ navbar {
 }
 
 /* section 2 column */
-
+.section-width-permanent {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 var(--marg--med);
+}
 .two-column {
   width: 100%;
   max-width: 1140px;
@@ -268,4 +282,59 @@ navbar {
 .partners-grid img {
   height: 60px;
   place-self: centre;
+}
+
+/* section unified platform */
+.unified-platform-section {
+  padding: var(--marg-xl) 0;
+}
+.unified-platform-section h3 {
+  width: 50%;
+}
+.unified-platform-section .primary-button:hover {
+  background-color: var(--purple-2);
+}
+
+/* section graphics */
+
+.graphics-grid {
+  display: grid;
+  grid-template-areas:
+    "card slack slack"
+    "phone slack slack"
+    "phone dash dash";
+  grid-gap: var(--marg-large);
+  border-radius: 0 2px 40px rgba(0, 0, 0, 0.15);
+  padding: var(--marg-large);
+}
+#credit-card {
+  grid-area: card;
+  width: 100%;
+}
+#slack {
+  grid-area: slack;
+  width: 100%;
+}
+#phone {
+  grid-area: phone;
+  width: 100%;
+}
+#dash {
+  grid-area: dash;
+  width: 100%;
+}
+
+/* section card */
+
+.card {
+  padding: var(--marg-large) 0 0 var(--marg-sm);
+}
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: self-start;
+}
+.card .icon {
+  height: 50px;
 }
