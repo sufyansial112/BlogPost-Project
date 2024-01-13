@@ -210,7 +210,7 @@ navbar {
 .section-width-permanent {
   width: 100%;
   max-width: 1140px;
-  padding: 0 var(--marg--med);
+  padding: var(--marg--med) var(--marg-large);
 }
 .two-column {
   width: 100%;
@@ -337,4 +337,67 @@ navbar {
 }
 .card .icon {
   height: 50px;
+}
+
+/* integration Section */
+
+.integration-section {
+  background-color: var(--accent-color);
+  color: var(--text-light);
+}
+.integration-section .primary-button {
+  background-color: var(--blue-1);
+  color: var(--accent-color);
+}
+
+.int-grid-style {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  column-gap: 1rem;
+}
+.int-grid-in-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin-top: var(--marg-xl);
+}
+
+#api-code,
+#terminal-code {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 20px;
+}
+.integration-section .secondary-button {
+  color: var(--blue-1);
+}
+.integration-section .primary-button:hover {
+  background-color: var(--bg-light);
+}
+
+/* why-swipe-section */
+.why-swipe-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr 1fr;
+  column-gap: 1rem;
+}
+.why-swipe-section .why-swipe-grid p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+.new-section {
+  background-color: var(--accent-color);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.section-new {
+  width: 100%;
+  background-color: var(--text-grey);
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 }
